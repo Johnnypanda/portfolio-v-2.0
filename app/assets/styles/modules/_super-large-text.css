@@ -1,0 +1,23 @@
+.super-large-text {
+	position: relative;
+	
+	&__image{
+		display: block;
+		opacity: 0.3;
+	}
+
+	&__content{
+		text-align: center;
+		line-height: 0.3;
+	}
+	
+	&__headline {
+		font-size: 10rem;
+		color: #fff;
+	}
+
+	&__lesser-headline {
+		font-size: 3rem;
+	}
+
+}
