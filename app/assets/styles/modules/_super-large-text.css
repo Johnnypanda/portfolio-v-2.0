@@ -1,10 +1,6 @@
 .super-large-text {
 	position: relative;
 	
-	&__image{
-		display: block;
-		opacity: 0.3;
-	}
 
 	&__content{
 		text-align: center;
@@ -12,12 +8,24 @@
 	}
 	
 	&__headline {
-		font-size: 10rem;
+		font-size: 3rem;
 		color: #fff;
+		
+		@mixin atSmall{
+			font-size: 8rem;
+		}
+
+		@mixin atMedium{
+			font-size: 10rem;
+		}
 	}
 
 	&__lesser-headline {
-		font-size: 3rem;
+		font-size: 1rem;
+
+		@mixin atSmall{
+			font-size: 3rem;
+		}
 	}
 
 }
