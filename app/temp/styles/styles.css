@@ -391,10 +391,12 @@ header {
 
 .super-large-text__content{
 		text-align: center;
-		line-height: 0.3;
+		
 	}
 
 .super-large-text__headline {
+		padding: 0;
+		margin: 0;
 		font-size: 3rem;
 		color: #fff;
 	}
