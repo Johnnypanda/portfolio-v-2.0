@@ -1,0 +1,34 @@
+
+.row {
+	&__medium-8{
+
+		@mixin atMedium {
+			width: 63%;
+			float: left;
+		}
+
+	}
+
+	&__medium-6{
+
+		@mixin atMedium{
+			width: 50%;
+			float: left;
+		}
+	}
+
+	&__medium-4{
+
+		@mixin atMedium {
+			width: 37%;
+			float: left;
+		}
+	}
+
+	&--gutters {
+		
+		@mixin atMedium {
+			padding-right: 65px;
+		}
+	}
+}
