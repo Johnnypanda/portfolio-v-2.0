@@ -1,5 +1,34 @@
 footer {
+	padding: 1.5rem;
+	margin: 1.5rem 0 0 0;
 	background-color: $mainPink;
 	overflow: hidden;
 	color: #fff;
+
+	ul {
+		display: inline-block;
+		float: left;
+	}
+
+	li {
+		display: inline-block;
+		list-style: none;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #fff;
+		transition: all .3s ease;
+	}
+
+	a:hover {
+		border-bottom: 1px solid #fff;
+	}
+
+	.copyright {
+		float: right;
+		text-align: center;
+	}
 }

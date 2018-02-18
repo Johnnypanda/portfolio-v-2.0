@@ -1,8 +1,8 @@
 header {
-	height: 300px;
+	height: 400px;
 	background-color: $mainGreen;
 	overflow: hidden;
-	padding-bottom: 0;
+
 
 	@mixin atSmall{
 		height: 600px;

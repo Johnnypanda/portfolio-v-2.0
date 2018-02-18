@@ -1,0 +1,22 @@
+.btn {
+	
+
+
+	&__large{
+		background: 0 0 #ffffff;
+    	border: 1px solid #2f323a;
+    	padding: .3rem;
+    	border-radius: 3px;
+    	cursor: pointer;
+    	transition: all 0.25s ease;
+		
+		@mixin atSmall {
+    		padding: 1rem 3rem 1rem 3rem;
+		}
+
+    	&:hover {
+			color: $mainPink;
+			border-color: $mainPink;
+    	}
+	}
+}
