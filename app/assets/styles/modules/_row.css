@@ -10,7 +10,10 @@
 	}
 
 	&__medium-6{
-
+		
+		margin-top: 0;
+		padding-top: 0;
+		
 		@mixin atMedium{
 			width: 50%;
 			float: left;
@@ -18,7 +21,7 @@
 	}
 
 	&__medium-4{
-
+			
 		@mixin atMedium {
 			width: 37%;
 			float: left;
@@ -26,8 +29,8 @@
 	}
 
 	&--gutters {
-		
-		@mixin atMedium {
+			padding-right: 20px;
+		@mixin atLarge {
 			padding-right: 65px;
 		}
 	}

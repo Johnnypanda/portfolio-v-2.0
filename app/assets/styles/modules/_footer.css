@@ -4,14 +4,34 @@
 	background-color: $mainPink;
 	overflow: hidden;
 	color: #fff;
+	text-align: center;
+
+	&__footer-item {
+		display: inline-block;
+		padding: 0 5px 0 5px;
+
+		@mixin atSmall {
+			float: left;
+		}
+	}
+
+	&__copyright {
+		padding: 15px 15px 0px 15px;
+
+		@mixin atSmall {
+			float: right;
+		}
+	}
 
 	a {
 		 color: #fff;
 		 text-decoration: none;
 		 transition: all .3s ease-in;
-		}
+	}
 
 	a:hover {
-			text-decoration: underline;
-		}
+
+		color: $mainGreen;
+	}
+
 }
