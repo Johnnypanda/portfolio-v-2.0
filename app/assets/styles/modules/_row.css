@@ -1,16 +1,15 @@
 
 .row {
+
 	&__medium-8{
 
 		@mixin atMedium {
 			width: 63%;
 			float: left;
 		}
-
 	}
 
 	&__medium-6{
-		
 		margin-top: 0;
 		padding-top: 0;
 		
@@ -27,9 +26,23 @@
 			float: left;
 		}
 	}
+	
+	&__small-4 {
+		
+		@mixin atSmall{
+			max-width: 50%;
+			float: left;
+		}
+
+		@mixin atMedium {
+			max-width: 33.333%;
+			float: left;
+		}
+	}
 
 	&--gutters {
-			padding-right: 20px;
+		padding-right: 20px;
+		
 		@mixin atLarge {
 			padding-right: 65px;
 		}

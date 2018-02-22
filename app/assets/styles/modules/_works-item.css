@@ -1,3 +1,36 @@
 .works-item {
-	margin: 2em;
+	position: relative;
+    width: 100%;
+    padding: 15px 15px 0 15px;
+	display: inline-block;
+	overflow: hidden;
+	
+
+	&__image {
+		border-radius: .8rem;
+	}
+	
+	&__relative-padding {
+		position: relative;
+	}
+
+	&__text-area {
+	    position: absolute; 
+	    left: 0;
+	    bottom: 3px; 
+	    background: $mainBlue;
+	    color: #f1f1f1; 
+	    width: 100%; 
+	    border-bottom-right-radius: .8rem;
+	    border-bottom-left-radius: .8rem;
+	    padding-left: 10px;
+		opacity: 0;
+	    transition: all .6s ease;
+
+
+	    &:hover{
+			opacity: 1;
+			cursor: pointer;
+	    }
+	}
 }

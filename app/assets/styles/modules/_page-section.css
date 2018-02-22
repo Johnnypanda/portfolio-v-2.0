@@ -8,7 +8,10 @@
 	
 
 	&--no-top-padding{
-		padding-top: 0;
+
+		@mixin atMedium {
+			padding-top: 0;
+		}
 	}
 
 	&__title {

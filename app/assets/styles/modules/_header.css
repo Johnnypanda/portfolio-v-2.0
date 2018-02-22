@@ -6,8 +6,6 @@ header {
 	background-size: 500% 500%;
 	animation: Gradient 30s ease infinite;
 	
-	
-
 	@mixin atSmall{
 		height: 600px;
 	}
