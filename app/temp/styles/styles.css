@@ -366,16 +366,48 @@ img, embed, object, video {
 	        box-sizing: border-box;
 }
 
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 header {
+
 	height: 400px;
-	background-color: #43C181;
 	overflow: hidden;
+	background: linear-gradient(-45deg, #EA527D, #E73C7E, #23A6D5, #23D5AB, #43C181);
+	background-size: 500% 500%;
+	-webkit-animation: Gradient 30s ease infinite;
+	        animation: Gradient 30s ease infinite;
+
+
 }
 
 @media (min-width: 530px){
 
 header {
 		height: 600px
+
+
 }
 	}
 
@@ -473,7 +505,7 @@ header {
 
 .site-footer a:hover {
 
-		color: #43C181;
+		color: #23A6D5;
 	}
 
 @media (min-width: 800px){
