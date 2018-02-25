@@ -397,7 +397,6 @@ header {
 	-webkit-animation: Gradient 30s ease infinite;
 	        animation: Gradient 30s ease infinite;
 
-
 }
 
 @media (min-width: 530px){
@@ -405,8 +404,30 @@ header {
 header {
 		height: 600px
 
-
 }
+	}
+
+header .primary-nav ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: disc;
+			display: block;
+			float: right;
+		}
+
+header .primary-nav ul li {
+				display: inline-block;
+				list-style: none;
+			}
+
+header .primary-nav a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+		}
+
+header .site-logo {
+		display: block;
 	}
 
 .super-large-text {

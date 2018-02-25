@@ -9,6 +9,33 @@ header {
 	@mixin atSmall{
 		height: 600px;
 	}
+	
+	.primary-nav {
 
+
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: disc;
+			display: block;
+			float: right;
+			
+
+			li {
+				display: inline-block;
+				list-style: none;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+		}
+	}
+
+	.site-logo {
+		display: block;
+	}
 
 }
