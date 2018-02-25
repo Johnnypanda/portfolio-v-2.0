@@ -1,10 +1,10 @@
 .btn {
 	
 	&__large{
-		background: 0 0 #ffffff;
+		background: rgb(246, 246, 246);
     	border: 1px solid #2f323a;
-    	padding: .3rem;
     	border-radius: 3px;
+    	padding: .3rem;
     	cursor: pointer;
     	transition: all 0.25s ease;
 		

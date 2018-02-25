@@ -348,7 +348,8 @@ template {
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #333;	
+	color: #333;
+	background-color: rgb(246, 246, 246);	
 }
 
 img, embed, object, video {
@@ -603,6 +604,13 @@ header {
 		text-align: center;
 	}
 
+.page-section__big-text-content {
+		text-align: center;
+		font-size: 1.2rem;
+		padding-bottom: 2rem;
+		font-weight: 400;
+	}
+
 .page-section__text-content{
 
 		font-size: 1rem;
@@ -716,7 +724,6 @@ header {
 
 .works-item__relative-padding {
 		position: relative;
-
 	}
 
 .works-item__text-area{
@@ -755,10 +762,10 @@ header {
 	     }
 
 .btn__large{
-		background: 0 0 #ffffff;
+		background: rgb(246, 246, 246);
     	border: 1px solid #2f323a;
-    	padding: .3rem;
     	border-radius: 3px;
+    	padding: .3rem;
     	cursor: pointer;
     	-webkit-transition: all 0.25s ease;
     	transition: all 0.25s ease;

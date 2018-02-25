@@ -7,8 +7,6 @@
 	overflow: hidden;
 	border-radius: .8rem;
     transition: all .6s ease;
-	
-
 
 	h4{
 		color: #333;
@@ -31,7 +29,6 @@
 	
 	&__relative-padding {
 		position: relative;
-
 	}
 
 	&__text-area{
@@ -49,6 +46,7 @@
 		text-align: center;
 		opacity: 0;
 	    transition: all .6s ease;
+
 
 		p{
 			display: inline-block;

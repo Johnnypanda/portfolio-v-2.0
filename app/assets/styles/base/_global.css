@@ -1,6 +1,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
-	color: #333;	
+	color: #333;
+	background-color: rgb(246, 246, 246);	
 }
 
 img, embed, object, video {
