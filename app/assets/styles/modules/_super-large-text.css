@@ -1,10 +1,26 @@
 .super-large-text {
 	position: relative;
+	height: 400px;
+	overflow: hidden;
+	background: linear-gradient(-45deg, #EA527D, #E73C7E, #23A6D5, #23D5AB, #43C181);
+	background-size: 500% 500%;
+	animation: Gradient 30s ease infinite;
 	
+	@mixin atSmall{
+		height: 600px;
+	}
 
 	&__content{
+		padding-top: 35%;
 		text-align: center;
-		
+
+		@mixin atSmall {
+			padding-top: 22%;
+		}
+
+		@mixin atMedium{
+			padding-top: 12%;
+		}
 	}
 	
 	&__headline {
