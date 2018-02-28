@@ -3,6 +3,7 @@
 
 	@mixin atMedium {
 		padding-top: 0;
+
 	}
 
 	&--pull-right{
@@ -49,6 +50,10 @@
 		@mixin atMedium {
 		padding: 15px;	
 		background-color: transparent;
+
+			&.is-current-link {
+				color: $mainBlue;
+			}
 		}
 	}
 
