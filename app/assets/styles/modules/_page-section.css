@@ -14,12 +14,32 @@
 		}
 	}
 
+
 	&__title {
 		font-size: 2rem;
 		font-weight: 600;
 		text-align: center;
 		margin: 1.125rem;
 		padding: 1.125rem;
+		color: #333;
+		
+		&--no-bottom-margin{
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+
+		&--icon {
+			margin-right: 10px;
+		}
+
+		a {
+			color: #333;
+			transition: color .3s ease;
+
+			&:hover {
+				color: $mainBlue;
+			}
+		}
 
 		@mixin atSmall{
 			font-size: 4rem;

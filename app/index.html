@@ -32,7 +32,7 @@
 						<li><a href="#about" id="about-link">About</a></li>
 						<li><a href="#skills" id="skills-link">Skills</a></li>
 						<li><a href="#works" id="works-link">Works</a></li>
-						<li><a href="#nowhere">Contact</a></li>
+						<li><a href="#" class="open-modal">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -196,7 +196,7 @@
 		<div class="page-section">
 			<div class="wrapper">
 				<h3 class="page-section__big-text-content">If you want to contact me, click the button below.</h3>
-				<p class="page-section__subtitle"><a class="btn btn__large">Get in touch</a></p>
+				<p class="page-section__subtitle"><a class="btn btn__large open-modal">Get in touch</a></p>
 			</div>
 		</div>
 
@@ -208,6 +208,30 @@
 		</div>
 	</footer>
 	
+	<div class="modal">
+		<div class="modal__close">X</div>
+		<div class="modal__inner">
+			<h2 class="page-section__title page-section__title--no-bottom-margin"><i class="far fa-envelope page-section__title--icon"></i>Get in touch</h2>
+			<div class="wrapper">
+				<form class="modal__contact-form-container">
+				    <input type="text" name="subject" placeholder="Subject" /><br />
+				    <input  type="email" name="email" placeholder="Email" /><br />
+				    <textarea type="text" name="message" placeholder="Message"></textarea><br />
+				    <button id="submit" type="submit">
+				      Send
+				    </button>
+				</form>
+			</div>
+			<p class="page-section__title">
+				<a href=""><i class="fab fa-facebook-square"></i></a>
+				<a href=""><i class="fab fa-linkedin"></i></a>
+				<a href=""><i class="fab fa-twitter-square"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+			</p>
+		</div>	
+	</div>
+	
+
 	  <script src="/temp/scripts/App.js" type="text/javascript"></script>
 
 </body>
