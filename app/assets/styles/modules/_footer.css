@@ -1,10 +1,24 @@
 .site-footer {
+	position: relative;
 	padding: 1.5rem;
-	margin: 1.5rem 0 0 0;
 	background-color: $mainPink;
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
+	
+		&::before{
+		display: block;
+	    position: absolute;
+	    top: -4px;
+	    left: 0;
+	    z-index: 3;
+	    background: url(/assets/fonts/edge-white.svg) repeat-x 50% 0;
+	    background-size: auto 100%;
+	    width: 100%;
+	    height: 12px;
+	    content: "";
+	    transform: rotate(180deg);
+	}
 
 	&__footer-item {
 		display: inline-block;

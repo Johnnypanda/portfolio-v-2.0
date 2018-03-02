@@ -1,7 +1,8 @@
 .skills-item{
 	position: relative;
-
-
+	max-width: 570px;
+	
+	
 	@mixin atSmall {
 		padding-left: 94px;
 	}

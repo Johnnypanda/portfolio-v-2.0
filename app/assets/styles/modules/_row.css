@@ -14,6 +14,7 @@
 		padding-top: 0;
 		
 		@mixin atMedium{
+			display: flex;
 			width: 50%;
 			float: left;
 		}

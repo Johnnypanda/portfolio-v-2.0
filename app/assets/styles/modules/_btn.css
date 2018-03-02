@@ -1,20 +1,26 @@
 .btn {
+	border: 1px solid #2f323a;
+	transition: all 0.25s ease;
+	padding: .3rem;
 	
-	&__large{
+	&:hover {
+		color: $mainPink;
+		border-color: $mainPink;
+    	}
+
+	&--small {
+		max-height: 44px;
+		border-color: #fff;
+	}
+
+	&--large{
 		background: rgb(246, 246, 246);
-    	border: 1px solid #2f323a;
     	border-radius: 3px;
-    	padding: .3rem;
     	cursor: pointer;
-    	transition: all 0.25s ease;
 		
 		@mixin atSmall {
-    		padding: 1rem 3rem 1rem 3rem;
+			padding: 2rem 8rem 2rem 8rem;
 		}
 
-    	&:hover {
-			color: $mainPink;
-			border-color: $mainPink;
-    	}
 	}
 }

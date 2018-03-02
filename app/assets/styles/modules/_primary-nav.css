@@ -46,18 +46,17 @@
 		font-weight: 300;
 		color: #fff;
 		display: block;
+		outline: none;
+		transition: border .3s ease-out;
 		
 		@mixin atMedium {
-		padding: 15px;	
+		padding: 14px;	
 		background-color: transparent;
 
 			&.is-current-link {
-				color: $mainBlue;
+				height: 44px;
+				border-bottom: 2px solid #fff;	
 			}
 		}
-	}
-
-	a:hover {
-		text-decoration: underline;
 	}
 }

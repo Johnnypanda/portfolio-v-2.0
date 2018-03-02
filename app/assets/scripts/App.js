@@ -5,6 +5,7 @@ import StickyHeader from './modules/StickyHeader';
 import RevealOnScroll from './modules/RevealOnScroll';
 import Modal from './modules/Modal';
 
+
 var mobileMenu = new MobileMenu();
 var stickyHeader = new StickyHeader();
 new RevealOnScroll($(".skills-item"), "85%");

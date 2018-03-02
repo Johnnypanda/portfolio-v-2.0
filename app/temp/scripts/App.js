@@ -13323,7 +13323,7 @@ var StickyHeader = function () {
 		_classCallCheck(this, StickyHeader);
 
 		this.siteHeader = (0, _jquery2.default)(".header");
-		this.TriggerElement = (0, _jquery2.default)(".super-large-text__lesser-headline");
+		this.TriggerElement = (0, _jquery2.default)(".super-large-text__headline");
 		this.createHeaderWaypoint();
 		this.pageSections = (0, _jquery2.default)(".page-section");
 		this.headerLinks = (0, _jquery2.default)(".primary-nav a");

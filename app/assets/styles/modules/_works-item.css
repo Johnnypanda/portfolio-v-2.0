@@ -2,12 +2,16 @@
 	position: relative;
     width: 100%;
     height: auto;
-    padding: 15px 15px 0 15px;
 	display: inline-block;
 	overflow: hidden;
 	border-radius: .8rem;
     transition: all .6s ease;
+    padding:0;
 
+    @mixin atSmall{
+		padding: 15px 15px 0 15px;
+    }
+	
 	h4{
 		color: #333;
 		text-align: center;
