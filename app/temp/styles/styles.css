@@ -390,6 +390,46 @@ img, embed, object, video {
 	}
 }
 
+@-webkit-keyframes spin {
+  0%,
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(160%);
+            transform: translate(160%);
+  }
+  50% {
+    -webkit-transform: translate(160%, 160%);
+            transform: translate(160%, 160%);
+  }
+  75% {
+    -webkit-transform: translate(0, 160%);
+            transform: translate(0, 160%);
+  }
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  25% {
+    -webkit-transform: translate(160%);
+            transform: translate(160%);
+  }
+  50% {
+    -webkit-transform: translate(160%, 160%);
+            transform: translate(160%, 160%);
+  }
+  75% {
+    -webkit-transform: translate(0, 160%);
+            transform: translate(0, 160%);
+  }
+}
+
 .header {
 	padding: 10px 0;
 	position: fixed;
@@ -405,7 +445,7 @@ img, embed, object, video {
 	}
 
 @media (min-width: 800px){
-
+		
 		.header--bordered {
 			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
 			        box-shadow: 0 1px 2px rgba(0,0,0,.1);
@@ -530,8 +570,11 @@ img, embed, object, video {
 		position: relative;
 		-webkit-transform: scale(1.2);
 		        transform: scale(1.2);
-		opacity: 0;
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+
 		-webkit-transition: all .3s ease-out;
+
 		transition: all .3s ease-out;
 		padding-top: 100px;
 		text-align: center;
@@ -553,6 +596,8 @@ img, embed, object, video {
 			z-index: 1;
 			-webkit-transform: scale(1);
 			        transform: scale(1);
+			-webkit-transform: translateY(0);
+			        transform: translateY(0);
 		}
 
 .super-large-text {
@@ -774,7 +819,7 @@ img, embed, object, video {
 	}
 
 .page-section {
-	
+	cursor: default;
 	padding-top: 2rem;
 }
 
@@ -793,7 +838,8 @@ img, embed, object, video {
 @media (min-width: 530px){
 
 .page-section--bigger-padding {
-			padding: 3rem
+			padding: 5rem;
+			padding-bottom: 7rem
 	}
 	}
 
@@ -868,11 +914,17 @@ img, embed, object, video {
 		font-size: 1rem;
 		text-align: justify;
 		padding-top: .4rem;
+		-webkit-transition: color .3s ease;
+		transition: color .3s ease;
 	}
 
 .page-section__text-content--highlighted {
 			color: #23A6D5;
 		}
+
+.page-section__text-content--highlighted:hover {
+				color: #EA527D;
+			}
 
 @media (min-width: 530px){
 
@@ -902,6 +954,7 @@ img, embed, object, video {
 
 .skills-item__icon {
 		
+		color: #333;
 		display: none;
 		font-size: 3rem;
 
@@ -1201,7 +1254,7 @@ img, embed, object, video {
 }
 
 .modal__inner {
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		top: 50%;
 		-webkit-transform: translateY(-50%);
@@ -1297,3 +1350,71 @@ img, embed, object, video {
 .modal__close:hover {
 			color: #23A6D5;
 		}
+
+.preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99;
+}
+
+.preloader__icon {
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:50%; /* centers the loading animation horizontally one the screen */
+		top:50%; /* centers the loading animation vertically one the screen */
+		background-image:url(); /* path to your loading animation */
+		background-repeat:no-repeat;
+		background-position:center;
+		margin:-100px 0 0 -100px;
+	}
+
+/* is width and height divided by two */
+
+.preloader__icon__animation {
+				position:absolute;
+				top:50%;
+				left:50%;
+				-webkit-transform:translate(-50%, -50%);
+				        transform:translate(-50%, -50%);
+			  /*change these sizes to fit into your project*/
+			    width:100px;
+			    height:100px;
+		}
+
+.preloader__icon__animation hr {
+			  border: 0;
+			  margin: 0;
+			  width: 40%;
+			  height: 40%;
+			  position: absolute;
+			  border-radius: 50%;
+			  -webkit-animation: spin 2s ease infinite;
+			          animation: spin 2s ease infinite;
+			}
+
+.preloader__icon__animation :first-child {
+			  background: #EA527D;
+			  -webkit-animation-delay: -1.5s;
+			          animation-delay: -1.5s;
+			}
+
+.preloader__icon__animation :nth-child(2) {
+			  background: #27D2A6;
+			  -webkit-animation-delay: -1s;
+			          animation-delay: -1s;
+			}
+
+.preloader__icon__animation :nth-child(3) {
+			  background: #800080;
+			  -webkit-animation-delay: -0.5s;
+			          animation-delay: -0.5s;
+			}
+
+.preloader__icon__animation :last-child {
+			  background: #23A6D5;
+			}

@@ -11228,6 +11228,10 @@ var _Modal = __webpack_require__(9);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
+var _Preloader = __webpack_require__(10);
+
+var _Preloader2 = _interopRequireDefault(_Preloader);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -11235,6 +11239,7 @@ var stickyHeader = new _StickyHeader2.default();
 new _RevealOnScroll2.default((0, _jquery2.default)(".skills-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".works-item"), "60%");
 var modal = new _Modal2.default();
+var preloader = new _Preloader2.default();
 
 /***/ }),
 /* 3 */
@@ -13881,6 +13886,62 @@ var Modal = function () {
 }();
 
 exports.default = Modal;
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Preloader = function () {
+	function Preloader() {
+		_classCallCheck(this, Preloader);
+
+		this.siteBody = (0, _jquery2.default)('body');
+		this.preloaderContainer = (0, _jquery2.default)('.preloader');
+		this.preloaderIcon = (0, _jquery2.default)('.preloader__icon');
+		this.events();
+	}
+
+	_createClass(Preloader, [{
+		key: 'events',
+		value: function events() {
+			(0, _jquery2.default)(window).on('load', this.loadWindow.bind(this));
+		}
+	}, {
+		key: 'loadWindow',
+		value: function loadWindow() {
+			this.preloaderIcon.fadeOut();
+			this.preloaderContainer.delay(350).fadeOut('slow');
+			this.siteBody.delay(350).css({ 'overflow': 'visible' });
+		}
+	}]);
+
+	return Preloader;
+}();
+
+exports.default = Preloader;
+
+// 		$(window).on('load', function() {
+// 			  $('.preloaderIcon').fadeOut();
+// 			  $('.preloader').delay(350).fadeOut('slow');
+// 			  $('body').delay(350).css({'overflow':'visible'});
+// })
 
 /***/ })
 /******/ ]);

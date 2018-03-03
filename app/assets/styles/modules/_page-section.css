@@ -1,5 +1,5 @@
 .page-section {
-	
+	cursor: default;
 	padding-top: 2rem;
 	
 	@mixin atMedium {
@@ -11,7 +11,8 @@
 		padding-bottom: 1.5rem;
 
 		@mixin atSmall {
-			padding: 3rem;
+			padding: 5rem;
+			padding-bottom: 7rem;
 		}
 	}
 
@@ -80,9 +81,14 @@
 		font-size: 1rem;
 		text-align: justify;
 		padding-top: .4rem;
-		
+		transition: color .3s ease;
+
 		&--highlighted {
 			color: $mainBlue;
+
+			&:hover {
+				color: $mainPink;
+			}
 		}
 
 		@mixin atSmall{
