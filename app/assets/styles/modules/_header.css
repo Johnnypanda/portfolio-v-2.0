@@ -20,6 +20,8 @@
 	
 
 	&__site-logo {
+		font-family:'Permanent Marker', cursive;
+		font-weight: 50;
 		position: absolute;
 		top: 0;
 		transition: all .3s ease-out;
