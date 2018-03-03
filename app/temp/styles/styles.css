@@ -1098,7 +1098,7 @@ img, embed, object, video {
 @media (min-width: 800px){
 
 .primary-nav li {
-			padding-right: 20px;
+			padding: 0 10px 0 10px;
 			float: left;
 			display: block
 
@@ -1112,7 +1112,7 @@ img, embed, object, video {
 @media (min-width: 800px){
 
 .primary-nav li li:last-child {
-				padding-right: 20px
+				padding-right: 0 10px 0 10px
 		}
 	}
 
@@ -1122,10 +1122,26 @@ img, embed, object, video {
 		font-weight: 300;
 		color: #fff;
 		display: block;
-		outline: none;
-		-webkit-transition: border .3s ease-out;
-		transition: border .3s ease-out;
+		position: relative;
+		-webkit-transition: all .3s ease-out;
+		transition: all .3s ease-out;
 	}
+
+.primary-nav a::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			background-color: #fff;
+			visibility: hidden;
+			-webkit-transform: scaleX(0);
+			        transform: scaleX(0);
+			-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+
+		}
 
 @media (min-width: 800px){
 
@@ -1136,8 +1152,13 @@ img, embed, object, video {
 
 			.primary-nav a.is-current-link {
 				height: 44px;
-				border-bottom: 2px solid #fff;	
 			}
+				
+				.primary-nav a.is-current-link::before {
+					visibility: visible;
+					-webkit-transform: scaleX(1);
+					        transform: scaleX(1);
+				}
 	}
 
 .reveal-item {
