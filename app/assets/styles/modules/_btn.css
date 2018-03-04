@@ -17,8 +17,13 @@
 		background: rgb(246, 246, 246);
     	border-radius: 3px;
     	cursor: pointer;
-		
+		z-index: 5;
+
 		@mixin atSmall {
+			padding: 2rem 5rem 2rem 5rem;
+		}
+
+		@mixin atMedium {
 			padding: 2rem 8rem 2rem 8rem;
 		}
 

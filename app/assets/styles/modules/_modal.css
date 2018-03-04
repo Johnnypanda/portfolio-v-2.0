@@ -1,6 +1,6 @@
 .modal {
 	position: fixed;
-	z-index: 4;
+	z-index: 5;
 	background-color: rgba(#fff, .94);
 	top: 0;
 	bottom: 0;
@@ -91,7 +91,8 @@
 		transform-origin: 100% 0;
 		cursor: pointer;
 		color: #333;
-
+		font-weight: bold;
+		z-index: 5;
 		&:hover {
 			color: $mainBlue;
 		}
