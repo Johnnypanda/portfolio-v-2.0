@@ -457,7 +457,6 @@ img, embed, object, video {
 
 .header__site-logo {
 		font-family:'Permanent Marker', cursive;
-		font-weight: 50;
 		position: absolute;
 		top: 0;
 		-webkit-transition: all .3s ease-out;
@@ -918,7 +917,6 @@ img, embed, object, video {
 		padding-top: .4rem;
 		-webkit-transition: color .3s ease;
 		transition: color .3s ease;
-		font-weight: 50;
 	}
 
 .page-section__text-content--highlighted {
@@ -1177,7 +1175,7 @@ img, embed, object, video {
 @media (min-width: 800px){
 
 .primary-nav li li:last-child {
-				padding-right: 0 10px 0 10px
+				padding: 10px
 		}
 	}
 
@@ -1254,7 +1252,6 @@ img, embed, object, video {
 	        transform: scale(1.2);
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
-	max-height: 640;
 
 }
 

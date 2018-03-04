@@ -82,7 +82,6 @@
 		text-align: justify;
 		padding-top: .4rem;
 		transition: color .3s ease;
-		font-weight: 50;
 
 		&--highlighted {
 			color: $mainBlue;

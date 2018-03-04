@@ -34,7 +34,7 @@
 			padding-right: 0;
 
 			@mixin atMedium {
-				padding-right: 0 10px 0 10px;
+				padding: 10px;
 			}
 		}
 

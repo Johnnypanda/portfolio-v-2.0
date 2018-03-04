@@ -10,7 +10,6 @@
 	visibility: hidden;
 	transform: scale(1.2);
 	transition: all .3s ease;
-	max-height: 640;
 
 &--is-visible {
 	opacity: 1;
