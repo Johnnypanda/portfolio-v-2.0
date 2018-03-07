@@ -456,12 +456,11 @@ img, embed, object, video {
 	}
 
 .header__site-logo {
-		font-family:'Permanent Marker', cursive;
+		font-family:"Permanent Marker", cursive;
 		position: absolute;
 		top: 0;
 		-webkit-transition: all .3s ease-out;
 		transition: all .3s ease-out;
-		color: #333;
 	}
 
 @media (min-width: 800px){
@@ -480,7 +479,7 @@ img, embed, object, video {
 			opacity: 0;
 		}
 
-@media (min-width: 530px){
+@media (min-width: 800px){
 
 .header__site-logo a {
 				font-size: 2rem;
@@ -657,6 +656,9 @@ img, embed, object, video {
 		margin: 0;
 		font-size: 3rem;
 		color: #fff;
+		font-family: "Permanent Marker", cursive;
+		font-weight: 100;
+		text-shadow: .5px .5px 3px #333;
 	}
 
 @media (min-width: 530px){
@@ -676,6 +678,7 @@ img, embed, object, video {
 .super-large-text__lesser-headline {
 		font-weight: 100;
 		font-size: 1.1rem;
+		color: #fff;
 	}
 
 @media (min-width: 530px){
@@ -943,13 +946,13 @@ img, embed, object, video {
 
 .skills-item{
 	position: relative;
-	max-width: 570px;
 }
 
 @media (min-width: 530px){
 
 .skills-item{
-		padding-left: 94px
+		padding-left: 5.875rem;
+		padding-right: 1rem
 }
 	}
 

@@ -41,6 +41,9 @@
 		margin: 0;
 		font-size: 3rem;
 		color: #fff;
+		font-family: "Permanent Marker", cursive;
+		font-weight: 100;
+		text-shadow: .5px .5px 3px #333;
 		
 		@mixin atSmall{
 			font-size: 5rem;
@@ -54,6 +57,7 @@
 	&__lesser-headline {
 		font-weight: 100;
 		font-size: 1.1rem;
+		color: #fff;
 
 		@mixin atSmall{
 			font-size: 2rem;
