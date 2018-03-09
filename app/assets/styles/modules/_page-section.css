@@ -1,11 +1,17 @@
 .page-section {
 	cursor: default;
-	padding-top: 2rem;
+	padding: 2rem 0;
+	margin: 2rem 0;
+
+	@mixin clearfix;
 	
 	@mixin atMedium {
-		padding: 4.5rem;	
+		padding: 2rem 0;
+		margin: 6rem 0;	
 	}
 	
+	
+
 	&--bigger-padding {
 			
 		padding-bottom: 1.5rem;
@@ -23,13 +29,17 @@
 		}
 	}
 
+	&--lesser-margin {
+		margin: 0;
+	}
+
 
 	&__title {
 		font-size: 2rem;
 		font-weight: 600;
 		text-align: center;
 		margin: 1.125rem;
-		padding: 1.125rem;
+		padding: 0;
 		color: #333;
 		
 		&--no-bottom-margin{

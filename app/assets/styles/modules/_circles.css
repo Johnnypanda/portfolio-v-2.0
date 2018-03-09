@@ -1,0 +1,47 @@
+.circles {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__container {
+		max-width: 800px;
+		display: block;
+		position: relative;
+		float: none;
+		margin: 0 auto;
+
+	}
+
+	&__circle {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: $mainBlue;
+		display: block;
+		float: left;
+		margin:0 1rem;
+		transition: all .3s ease;
+		
+		&--blue {
+			background-color: $mainBlue;
+		}
+
+		&--pink { 
+			background-color: $mainPink
+		}
+
+		&--purple {
+			background-color: #800080;
+		}
+
+		&--aqua {
+			background-color: #27D2A6;
+		}
+
+		&:hover {
+			transform: scale(1.5)
+		}
+	}
+
+
+}

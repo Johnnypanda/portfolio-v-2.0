@@ -13937,11 +13937,5 @@ var Preloader = function () {
 
 exports.default = Preloader;
 
-// 		$(window).on('load', function() {
-// 			  $('.preloaderIcon').fadeOut();
-// 			  $('.preloader').delay(350).fadeOut('slow');
-// 			  $('body').delay(350).css({'overflow':'visible'});
-// })
-
 /***/ })
 /******/ ]);
