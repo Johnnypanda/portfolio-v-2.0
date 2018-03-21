@@ -2,7 +2,7 @@
 	border: 1px solid #2f323a;
 	transition: all 0.25s ease;
 	padding: .3rem;
-	
+
 	&:hover {
 		color: $mainPink;
 		border-color: $mainPink;
@@ -14,7 +14,7 @@
 	}
 
 	&--large{
-		background: rgb(246, 246, 246);
+		background: #EBEBEB;
     	border-radius: 3px;
     	cursor: pointer;
 		z-index: 5;

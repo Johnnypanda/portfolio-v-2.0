@@ -4,16 +4,16 @@
 	margin: 2rem 0;
 
 	@mixin clearfix;
-	
+
 	@mixin atMedium {
 		padding: 2rem 0;
-		margin: 6rem 0;	
+		margin: 6rem 0;
 	}
-	
-	
+
+
 
 	&--bigger-padding {
-			
+
 		padding-bottom: 1.5rem;
 
 		@mixin atSmall {
@@ -41,7 +41,7 @@
 		margin: 1.125rem;
 		padding: 0;
 		color: #333;
-		
+
 		&--no-bottom-margin{
 			margin-bottom: 0;
 			padding-bottom: 0;
@@ -79,7 +79,7 @@
 			}
 		}
 	}
-	
+
 	&__big-text-content {
 		text-align: center;
 		font-size: 1.2rem;
