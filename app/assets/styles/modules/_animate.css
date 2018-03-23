@@ -1,0 +1,17 @@
+.animate {
+	display: inline-block;
+	&:hover {
+	  animation-name: rubberBand;
+	  animation-duration: 1s;
+	  animation-fill-mode: both;
+	  transform: scale(1.01);
+	}
+
+	&--bounce-in{
+	  opacity: 1;
+	  animation-name: bounceInUp;
+	  animation-duration: 1s;
+	  animation-fill-mode: both;
+	}
+}
+

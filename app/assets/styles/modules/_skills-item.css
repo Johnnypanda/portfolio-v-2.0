@@ -1,25 +1,19 @@
 .skills-item{
 	position: relative;
-	
-	
+
 	@mixin atSmall {
 		padding-left: 5.875rem;
 		padding-right: 1rem;
 	}
 
 	&__icon {
-		
+
 		color: #333;
 		display: none;
 		font-size: 3rem;
-
 	    margin: 0 auto;
 		transition: color .3s ease;
 
-		&:hover{
-			color: $mainPink;
-		}
-		
 		@mixin atSmall{
 		    display: block;
 			position: absolute;
@@ -30,7 +24,7 @@
 			&--small{
 				display: inline-block;
 				padding-right: 5px;
-				
+
 				@mixin atSmall {
 					display: none;
 				}
@@ -38,12 +32,13 @@
 	}
 
 	&__title {
-		
+
 		display: block;
 		text-align: center;
 		font-size: 1.25rem;
 		margin-bottom: 0;
 		margin-top: 0;
+		transition: all .3s ease;
 
 		@mixin atSmall{
 			text-align: left;

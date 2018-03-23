@@ -17,29 +17,29 @@
 		height: 10px;
 		border-radius: 50%;
 		background-color: $mainBlue;
-		display: block;
+		display: inline-block;
 		float: left;
 		margin:0 1rem;
 		transition: all .3s ease;
-		
+
 		&--blue {
 			background-color: $mainBlue;
+			animation-delay: 0.1s;
 		}
 
-		&--pink { 
-			background-color: $mainPink
+		&--pink {
+			background-color: $mainPink;
+			animation-delay: 0.2s;
 		}
 
 		&--purple {
 			background-color: #800080;
+			animation-delay: 0.3s;
 		}
 
 		&--aqua {
 			background-color: #27D2A6;
-		}
-
-		&:hover {
-			transform: scale(1.5)
+			animation-delay: 0.4s;
 		}
 	}
 

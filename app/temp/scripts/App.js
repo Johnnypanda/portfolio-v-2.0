@@ -11232,6 +11232,10 @@ var _Preloader = __webpack_require__(10);
 
 var _Preloader2 = _interopRequireDefault(_Preloader);
 
+var _AnimateCircles = __webpack_require__(11);
+
+var _AnimateCircles2 = _interopRequireDefault(_AnimateCircles);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -11240,6 +11244,7 @@ new _RevealOnScroll2.default((0, _jquery2.default)(".skills-item"), "85%");
 new _RevealOnScroll2.default((0, _jquery2.default)(".works-item"), "60%");
 var modal = new _Modal2.default();
 var preloader = new _Preloader2.default();
+var animateCircles = new _AnimateCircles2.default();
 
 /***/ }),
 /* 3 */
@@ -13936,6 +13941,63 @@ var Preloader = function () {
 }();
 
 exports.default = Preloader;
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var AnimateCircles = function () {
+	function AnimateCircles() {
+		_classCallCheck(this, AnimateCircles);
+
+		this.itemsToAnimate = (0, _jquery2.default)('.circles__circle');
+		this.createWaypoints();
+		this.hideInitially();
+	}
+
+	_createClass(AnimateCircles, [{
+		key: 'hideInitially',
+		value: function hideInitially() {
+			this.itemsToAnimate.addClass("reveal-item");
+		}
+	}, {
+		key: 'createWaypoints',
+		value: function createWaypoints() {
+			var that = this;
+			this.itemsToAnimate.each(function () {
+				var currentItem = this;
+				new Waypoint({
+					element: currentItem,
+					handler: function handler() {
+						(0, _jquery2.default)(currentItem).addClass("animate--bounce-in");
+					},
+					offset: "80%"
+				});
+			});
+		}
+	}]);
+
+	return AnimateCircles;
+}();
+
+exports.default = AnimateCircles;
 
 /***/ })
 /******/ ]);

@@ -94,11 +94,7 @@
 		transition: color .3s ease;
 
 		&--highlighted {
-			color: $mainBlue;
-
-			&:hover {
-				color: $mainPink;
-			}
+			color: #0c9bce;
 		}
 
 		@mixin atSmall{
