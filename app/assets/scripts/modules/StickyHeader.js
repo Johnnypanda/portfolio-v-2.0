@@ -27,7 +27,7 @@ class StickyHeader {
 				} else {
 					that.siteHeader.removeClass("header--bordered");
 				}
-			}, 
+			},
 			offset: 145
 		});
 	}
@@ -42,7 +42,7 @@ class StickyHeader {
 					if(direction =="down") {
 					var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
 				    that.headerLinks.removeClass("is-current-link");
-				    $(matchingHeaderLink).addClass("is-current-link");						
+				    $(matchingHeaderLink).addClass("is-current-link");
 				}
 				},
 				offset: "18%"
@@ -53,7 +53,7 @@ class StickyHeader {
 					if(direction =="up") {
 					var matchingHeaderLink = currentPageSection.getAttribute("data-matching-link");
 				    that.headerLinks.removeClass("is-current-link");
-				    $(matchingHeaderLink).addClass("is-current-link");						
+				    $(matchingHeaderLink).addClass("is-current-link");
 				}
 				},
 				offset: "-40%"
