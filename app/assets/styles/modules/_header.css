@@ -21,14 +21,14 @@
 	}
 
 	&__site-logo {
-		font-family:"Permanent Marker", cursive;
+		font-family: 'Rubik', sans-serif;
 		position: absolute;
 		top: 0;
 		transition: all .3s ease-out;
 
 		@mixin atMedium {
 			.header--bordered & {
-				transform: scale(0.9);
+				transform: scale(0.8);
 				transform: translateY(-16%);
 			}
 
@@ -42,7 +42,6 @@
 
 			@mixin atMedium {
 				font-size: 2rem;
-				color: #fff;
 				opacity: 1;
 			}
 		}
