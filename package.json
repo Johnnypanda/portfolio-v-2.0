@@ -9,6 +9,7 @@
     "jquery-smooth-scroll": "^2.2.0",
     "nodemailer": "^4.6.0",
     "normalize.css": "^8.0.0",
+    "particles.js": "^2.0.0",
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
