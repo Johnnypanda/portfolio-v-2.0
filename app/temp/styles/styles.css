@@ -1224,25 +1224,24 @@ img, embed, object, video {
 			display: inline-block;
 		}
 
-.works-item__image {
-	    -webkit-transition: all .6s ease;
-	    transition: all .6s ease;
-	}
-
 .works-item__relative-padding {
 		position: relative;
 	}
 
-.works-item__text-area{
+.works-item--wrap-text {
+
+	}
+
+.works-item__text-area {
 	    position: absolute;
 	    top: 0;
 	    right: 0;
 	    left: 0;
+	    background-color: rgba(234,82,125, 0.9);
 	    bottom: 3px;
 	    border: 0 !important;
 	    z-index: 1;
 	    padding-top: 35%;
-		background-color: rgba(234,82,125, 0.9);
 		text-align: center;
 		width: 0;
 	    -webkit-transition: width .6s ease;
@@ -1250,23 +1249,39 @@ img, embed, object, video {
 
 	}
 
-.works-item__text-area p{
+.works-item__text-area--pink {
+			background-color: rgba(234,82,125, 0.9);
+	    }
+
+.works-item__text-area--purple {
+			background-color: rgba(128,0,128, 0.8);
+	    }
+
+.works-item__text-area--blue {
+			background-color: rgba(35,166,213, 0.9);
+	    }
+
+.works-item__text-area--aqua {
+			background-color: rgba(39,210,166, 0.9);
+	    }
+
+.works-item__text-area p {
 			display: none;
 			padding: 5%;
 		}
 
 @media (min-width: 530px){
 
-.works-item__text-area p{
+.works-item__text-area p {
 				font-size: 1.5rem
 		}
 	}
 
-.works-item__text-area a{
+.works-item__text-area a {
 	    	text-decoration: none;
 	    	color: #fff;
-	    	-webkit-transition: all .6s ease;
-	    	transition: all .6s ease;
+	    	-webkit-transition: color .6s ease;
+	    	transition: color .6s ease;
 	    }
 
 .works-item__text-area a:hover {

@@ -31,42 +31,58 @@
 		}
 	}
 
-	&__image {
-	    transition: all .6s ease;
-	}
-
 	&__relative-padding {
 		position: relative;
 	}
 
-	&__text-area{
+	&--wrap-text {
+
+	}
+
+	&__text-area {
 	    position: absolute;
 	    top: 0;
 	    right: 0;
 	    left: 0;
+	    background-color: rgba($mainPink, 0.9);
 	    bottom: 3px;
 	    border: 0 !important;
 	    z-index: 1;
 	    padding-top: 35%;
-		background-color: rgba($mainPink, 0.9);
 		text-align: center;
 		width: 0;
 	    transition: width .6s ease;
 
+	    &--pink {
+			background-color: rgba($mainPink, 0.9);
+	    }
 
-		p{
+	    &--purple {
+			background-color: rgba($mainPurple, 0.8);
+	    }
+
+	    &--blue {
+			background-color: rgba($mainBlue, 0.9);
+	    }
+
+	    &--aqua {
+			background-color: rgba($mainAqua, 0.9);
+	    }
+
+		p {
 			display: none;
 			padding: 5%;
+
 
 			@mixin atSmall {
 				font-size: 1.5rem;
 			}
 		}
 
-	    a{
+	    a {
 	    	text-decoration: none;
 	    	color: #fff;
-	    	transition: all .6s ease;
+	    	transition: color .6s ease;
 
 	     	&:hover {
 				color: $mainBlue;
