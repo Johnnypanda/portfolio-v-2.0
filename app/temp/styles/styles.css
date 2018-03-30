@@ -352,13 +352,12 @@ body {
 	font-family: 'Rubik', sans-serif;
 	color: #333;
 	/*background-color: rgb(246, 246, 246);*/
-	background: #EBEBEB url('/assets/images/ignasi_pattern_s.png') /*From Subtle Patterns*/
+	background: #fff;
 }
 
 img, embed, object, video {
 	max-width: 100%;
 	height: auto;
-	border-radius: 3px;
 }
 
 /* APPLIES CSS TO ALL THE ELEMENTS*/
@@ -750,7 +749,7 @@ img, embed, object, video {
 @media (min-width: 530px){
 
 .super-large-text {
-		height: 600px
+		height: 700px
 
 }
 	}
@@ -827,6 +826,14 @@ img, embed, object, video {
     	max-width: 600px;
     	padding-bottom: 1rem;
     }
+
+@media (min-width: 800px){
+
+.wrapper--equal-height {
+            display: table;
+            height: 100%
+    }
+	}
 
 .site-footer {
 	position: relative;
@@ -939,20 +946,27 @@ img, embed, object, video {
 	}
 
 .row__small-4--text {
-			padding: 0 15px;
 			max-width: 100%;
+			padding: 0 15px;
+			margin: 0;
 		}
 
 @media (min-width: 800px){
 
 .row__small-4--text {
-				max-width: 33.333%;
-				float: left
+				margin: 5px;
+				max-width: 31.333%;
+				float: left;
+				display: table-cell;
+				height: 111.5%
 		}
 	}
 
+@media (min-width: 800px){
+
 .row--gutters {
-		padding-right: 20px;
+			padding-right: 20px
+	}
 	}
 
 @media (min-width: 1010px){
@@ -980,6 +994,25 @@ img, embed, object, video {
 		padding: 2rem 0;
 		margin: 6rem 0
 }
+	}
+
+.page-section--pink {
+		background-color: rgba(234,82,125, 0.1);
+		border-bottom: 1px solid #f1f1f1;
+		border-top: 1px solid #f1f1f1;;
+	}
+
+.page-section--blue{
+		background-color: rgba(35,166,213, 0.1);
+	}
+
+.page-section--aqua{
+		border-bottom: 1px solid #f1f1f1;
+		border-top: 1px solid #f1f1f1;;
+	}
+
+.page-section--purple{
+		background-color: rgba(128,0,128, 0.1);
 	}
 
 .page-section--bigger-padding {
@@ -1118,6 +1151,7 @@ img, embed, object, video {
 @media (min-width: 530px){
 
 .skills-item__icon {
+			max-width: 45px;
 		    display: block;
 			position: absolute;
 			left: 0;
@@ -1162,31 +1196,35 @@ img, embed, object, video {
     height: auto;
 	display: inline-block;
 	overflow: hidden;
-	border-radius: .8rem;
     -webkit-transition: all .6s ease;
     transition: all .6s ease;
-    padding:0;
+    padding: 15px;
 }
 
-@media (min-width: 530px){
-
-.works-item {
-		padding: 15px 15px 0 15px
-}
+.works-item__description {
+		margin: 0;
+		padding: 20px;
+		height: 50px;
+		-webkit-transform: translateY(-3px);
+		        transform: translateY(-3px);
+		-webkit-transition: all .3s ease;
+		transition: all .3s ease;
 	}
 
-.works-item h4{
-		color: #333;
-		text-align: center;
-		cursor: default;
-	}
+.works-item__description h4 {
+			font-size: 1.2rem;
+			margin: 0;
+		}
 
 .works-item:hover div {
-			opacity: 1;
+			width: 100%;
+		}
+
+.works-item:hover p {
+			display: inline-block;
 		}
 
 .works-item__image {
-		border-radius: .8rem;
 	    -webkit-transition: all .6s ease;
 	    transition: all .6s ease;
 	}
@@ -1196,7 +1234,6 @@ img, embed, object, video {
 	}
 
 .works-item__text-area{
-
 	    position: absolute;
 	    top: 0;
 	    right: 0;
@@ -1205,19 +1242,25 @@ img, embed, object, video {
 	    border: 0 !important;
 	    z-index: 1;
 	    padding-top: 35%;
-		background-color: rgba(77, 73, 77, 0.6);
-		border-radius: .8rem;
+		background-color: rgba(234,82,125, 0.9);
 		text-align: center;
-		opacity: 0;
-	    -webkit-transition: all .6s ease;
-	    transition: all .6s ease;
+		width: 0;
+	    -webkit-transition: width .6s ease;
+	    transition: width .6s ease;
 
 	}
 
 .works-item__text-area p{
-			display: inline-block;
+			display: none;
 			padding: 5%;
 		}
+
+@media (min-width: 530px){
+
+.works-item__text-area p{
+				font-size: 1.5rem
+		}
+	}
 
 .works-item__text-area a{
 	    	text-decoration: none;
@@ -1228,7 +1271,7 @@ img, embed, object, video {
 
 .works-item__text-area a:hover {
 				color: #23A6D5;
-	     }
+	     	}
 
 .btn {
 	border: 1px solid #2f323a;
@@ -1248,7 +1291,7 @@ img, embed, object, video {
 		}
 
 .btn--large{
-		background: #EBEBEB;
+		background: #fff;
     	border-radius: 3px;
     	cursor: pointer;
 		z-index: 5;
@@ -1258,7 +1301,6 @@ img, embed, object, video {
 .btn--large:hover {
 			color: #EA527D;
 			border-color: #EA527D;
-			background-color: #ededed;
 	    	}
 
 @media (min-width: 530px){
@@ -1345,6 +1387,10 @@ img, embed, object, video {
 		transition: all .3s ease-out;
 	}
 
+.primary-nav a:hover {
+			color: #800080;
+		}
+
 .primary-nav a::before {
 			content: "";
 			position: absolute;
@@ -1364,14 +1410,14 @@ img, embed, object, video {
 @media (min-width: 800px){
 
 .primary-nav a {
-		padding: 14px;	
+		padding: 14px;
 		background-color: transparent
 	}
 
 			.primary-nav a.is-current-link {
 				height: 44px;
 			}
-				
+
 				.primary-nav a.is-current-link::before {
 					visibility: visible;
 					-webkit-transform: scaleX(1);

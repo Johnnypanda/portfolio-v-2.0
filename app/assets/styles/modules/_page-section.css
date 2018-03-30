@@ -11,6 +11,24 @@
 	}
 
 
+	&--pink {
+		background-color: rgba($mainPink, 0.1);
+		border-bottom: 1px solid #f1f1f1;
+		border-top: 1px solid #f1f1f1;;
+	}
+
+	&--blue{
+		background-color: rgba($mainBlue, 0.1);
+	}
+
+	&--aqua{
+		border-bottom: 1px solid #f1f1f1;
+		border-top: 1px solid #f1f1f1;;
+	}
+
+	&--purple{
+		background-color: rgba($mainPurple, 0.1);
+	}
 
 	&--bigger-padding {
 

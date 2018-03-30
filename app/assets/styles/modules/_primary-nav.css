@@ -12,7 +12,7 @@
 			float: right;
 		}
 	}
-	
+
 	ul {
 		margin:0;
 		padding: 0;
@@ -28,7 +28,7 @@
 			padding: 0 10px 0 10px;
 			float: left;
 			display: block;
-		}	
+		}
 
 		li:last-child {
 			padding-right: 0;
@@ -48,7 +48,11 @@
 		display: block;
 		position: relative;
 		transition: all .3s ease-out;
-		
+
+		&:hover {
+			color: #800080;
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -62,15 +66,15 @@
 			transition: all .3s ease;
 
 		}
-		
+
 
 		@mixin atMedium {
-		padding: 14px;	
+		padding: 14px;
 		background-color: transparent;
 
 			&.is-current-link {
 				height: 44px;
-				
+
 				&::before {
 					visibility: visible;
 					transform: scaleX(1);

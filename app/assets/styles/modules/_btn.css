@@ -15,7 +15,7 @@
 	}
 
 	&--large{
-		background: #EBEBEB;
+		background: #fff;
     	border-radius: 3px;
     	cursor: pointer;
 		z-index: 5;
@@ -23,7 +23,6 @@
 		&:hover {
 			color: $mainPink;
 			border-color: $mainPink;
-			background-color: #ededed;
 	    	}
 
 		@mixin atSmall {

@@ -4,39 +4,42 @@
     height: auto;
 	display: inline-block;
 	overflow: hidden;
-	border-radius: .8rem;
     transition: all .6s ease;
-    padding:0;
+    padding: 15px;
 
-    @mixin atSmall{
-		padding: 15px 15px 0 15px;
-    }
-	
-	h4{
-		color: #333;
-		text-align: center;
-		cursor: default;
+
+	&__description {
+		margin: 0;
+		padding: 20px;
+		height: 50px;
+		transform: translateY(-3px);
+		transition: all .3s ease;
+
+		h4 {
+			font-size: 1.2rem;
+			margin: 0;
+		}
 	}
 
 	&:hover {
-
 		div {
-			opacity: 1;
+			width: 100%;
 		}
 
+		p {
+			display: inline-block;
+		}
 	}
 
 	&__image {
-		border-radius: .8rem;
 	    transition: all .6s ease;
 	}
-	
+
 	&__relative-padding {
 		position: relative;
 	}
 
 	&__text-area{
-
 	    position: absolute;
 	    top: 0;
 	    right: 0;
@@ -45,16 +48,19 @@
 	    border: 0 !important;
 	    z-index: 1;
 	    padding-top: 35%;
-		background-color: rgba(77, 73, 77, 0.6);
-		border-radius: .8rem;
+		background-color: rgba($mainPink, 0.9);
 		text-align: center;
-		opacity: 0;
-	    transition: all .6s ease;
+		width: 0;
+	    transition: width .6s ease;
 
 
 		p{
-			display: inline-block;
+			display: none;
 			padding: 5%;
+
+			@mixin atSmall {
+				font-size: 1.5rem;
+			}
 		}
 
 	    a{
@@ -64,7 +70,7 @@
 
 	     	&:hover {
 				color: $mainBlue;
-	     }
+	     	}
 	    }
 
 	}

@@ -41,19 +41,25 @@
 		}
 
 		&--text {
-			padding: 0 15px;
 			max-width: 100%;
-
+			padding: 0 15px;
+			margin: 0;
 			@mixin atMedium {
-				max-width: 33.333%;
+				margin: 5px;
+				max-width: 31.333%;
 				float: left;
+				display: table-cell;
+				height: 111.5%;
 			}
 		}
 
 	}
 
 	&--gutters {
-		padding-right: 20px;
+
+		@mixin atMedium {
+			padding-right: 20px;
+		}
 
 		@mixin atLarge {
 			padding-right: 65px;

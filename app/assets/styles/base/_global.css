@@ -2,13 +2,12 @@ body {
 	font-family: 'Rubik', sans-serif;
 	color: #333;
 	/*background-color: rgb(246, 246, 246);*/
-	background: #EBEBEB url('/assets/images/ignasi_pattern_s.png') /*From Subtle Patterns*/
+	background: #fff;
 }
 
 img, embed, object, video {
 	max-width: 100%;
 	height: auto;
-	border-radius: 3px;
 }
 
 /* APPLIES CSS TO ALL THE ELEMENTS*/
