@@ -68,17 +68,19 @@
 			</div>
 
 
-	<div class="page-section" id="about" data-matching-link="#about-link">
+	<div class="page-section page-section--about" id="about" data-matching-link="#about-link">
 		<div class="wrapper">
 			<h3 class="page-section__title">About</h3>
 
 			<div class="row__medium-4 row--gutters">
-				<picture>
-					<source srcset="assets/images/me-lg.jpg" media="(min-width: 1010px)">
-					<source srcset="assets/images/me-md.jpg" media="(min-width: 800px)">
-					<source srcset="assets/images/me-wide.jpg" media="(min-width: 530px)">
-					<img src="assets/images/me-sm.jpg" alt="Artem Filinov">
-				</picture>
+				<div class="page-section--about__main-img">
+					<picture>
+						<source srcset="assets/images/me-lg.jpg" media="(min-width: 1010px)">
+						<source srcset="assets/images/me-md.jpg" media="(min-width: 800px)">
+						<source srcset="assets/images/me-wide.jpg" media="(min-width: 530px)">
+						<img src="assets/images/me-sm.jpg" alt="Artem Filinov">
+					</picture>
+				</div>
 			</div>
 			<div class="row__medium-8 wrapper--equal-height">
 				<p class="page-section__text-content">	I am an aspiring, ambitious and passionate 24 y.o. front-end developer, based in Wrocław, Poland. I began my journey to the world of web development a year ago and I have never looked back ever since, I knew that this is what I want to do.</p>
@@ -166,12 +168,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/memory-game-lg.jpg" alt="Memory game">
 									<div  class="works-item__text-area works-item__text-area--blue">
+										<div class="works-item__description">
+											<h4>Matching Game</h4>
 											<p><a href="https://github.com/Johnnypanda/memory-game" target="_blank">Code</a></p>
 											<p><a href="https://johnnypanda.github.io/memory-game/" target="_blank">Live</a></p>
+										</div>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>Matching Game</h4>
 								</div>
 							</div>
 						</div>
@@ -180,14 +182,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/travel-site-lg.jpg" alt="Travel Site">
 									<div  class="works-item__text-area works-item__text-area--pink">
-											<div class="works-item--wrap-text">
+												<div class="works-item__description">
+													<h4>Travel Site</h4>
+												</div>
 												<p><a href="https://github.com/Johnnypanda/travel-site" target="_blank">Code</a></p>
 												<p><a href="https://johnnypanda.github.io/travel-site/" target="_blank">Live</a></p>
-											</div>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>Travel Site</h4>
 								</div>
 							</div>
 						</div>
@@ -196,12 +196,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/wikipedia-viewer-lg.jpg" alt="Wikipedia Viewer">
 									<div  class="works-item__text-area works-item__text-area--purple">
+											<div class="works-item__description">
+												<h4>Wikipedia Viewer</h4>
+											</div>
 											<p><a href="https://github.com/Johnnypanda/wikipedia-viewer" target="_blank">Code</a></p>
 											<p><a href="https://johnnypanda.github.io/wikipedia-viewer/" target="_blank">Live</a></p>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>Wikipedia Viewer</h4>
 								</div>
 							</div>
 						</div>
@@ -210,12 +210,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/portfolio-v-1-lg.jpg" alt="Old Portfolio">
 									<div  class="works-item__text-area works-item__text-area--aqua">
+									<div class="works-item__description">
+										<h4>My Old Personal Site</h4>
+									</div>
 											<p><a href="https://github.com/Johnnypanda/portfolio-v-1" target="_blank">Code</a></p>
 											<p><a href="https://johnnypanda.github.io/portfolio-v-1/" target="_blank">Live</a></p>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>My Old Personal Site</h4>
 								</div>
 							</div>
 						</div>
@@ -224,12 +224,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/pixel-art-maker-lg.jpg" alt="Pixel Art Maker">
 									<div  class="works-item__text-area works-item__text-area--blue">
+											<div class="works-item__description">
+												<h4>Pixel Art Maker</h4>
+											</div>
 											<p><a href="https://github.com/Johnnypanda/pixel-art-maker" target="_blank">Code</a></p>
 											<p><a href="https://johnnypanda.github.io/pixel-art-maker/" target="_blank">Live</a></p>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>Pixel Art Maker</h4>
 								</div>
 							</div>
 						</div>
@@ -238,12 +238,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/random-quote-generator-lg.jpg" alt="Random Quote Generator">
 									<div  class="works-item__text-area works-item__text-area--pink">
+											<div class="works-item__description">
+												<h4>Random Quote Generator</h4>
+											</div>
 											<p><a href="https://github.com/Johnnypanda/random-quote-generator" target="_blank">Code</a></p>
 											<p><a href="https://johnnypanda.github.io/random-quote-generator/" target="_blank">Live</a></p>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>Random Quote Generator</h4>
 								</div>
 							</div>
 						</div>
@@ -252,12 +252,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/guess-color-game-lg.jpg" alt="Guess Color Game">
 									<div  class="works-item__text-area works-item__text-area--purple">
+									<div class="works-item__description">
+										<h4>Guess Color Game</h4>
+									</div>
 											<p><a href="https://github.com/Johnnypanda/guess-color-game" target="_blank">Code</a></p>
 											<p><a href="https://johnnypanda.github.io/guess-color-game/" target="_blank">Live</a></p>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>Guess Color Game</h4>
 								</div>
 							</div>
 						</div>
@@ -266,12 +266,12 @@
 								<div class="works-item__relative-padding">
 									<img class="works-item__image" src="assets/images/to-do-list-lg.jpg" alt="To-do list">
 									<div  class="works-item__text-area works-item__text-area--aqua">
+											<div class="works-item__description">
+												<h4>To-do List</h4>
+											</div>
 											<p><a href="https://github.com/Johnnypanda/to-do-list" target="_blank">Code</a></p>
 											<p><a href="https://johnnypanda.github.io/to-do-list/" target="_blank">Live</a></p>
 									</div>
-								</div>
-								<div class="works-item__description">
-									<h4>To-do List</h4>
 								</div>
 							</div>
 						</div>

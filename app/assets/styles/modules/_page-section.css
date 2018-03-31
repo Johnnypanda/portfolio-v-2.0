@@ -10,11 +10,53 @@
 		margin: 6rem 0;
 	}
 
+	&--about {
+		@mixin atMedium {
+			margin: 6rem auto;
+			max-width: 1100px;
+		}
+
+		&__main-img{
+			position: relative;
+
+
+		}
+			&__main-img::after {
+				display: block;
+			    position: absolute;
+			    bottom: 3px;
+			    left: 0;
+			    z-index: 3;
+			    background: url(/assets/fonts/edge-white.svg) repeat-x 50% 0;
+			    background-size: auto 100%;
+			    width: 100%;
+			    height: 12px;
+			    content: "";
+			}
+
+			&__main-img::before{
+			display: block;
+		    position: absolute;
+		    top: -1px;
+		    left: 0;
+		    z-index: 3;
+		    background: url(/assets/fonts/edge-white.svg) repeat-x 50% 0;
+		    background-size: auto 100%;
+		    width: 100%;
+		    height: 12px;
+		    content: "";
+		    transform: rotate(180deg);
+		}
+
+	}
+
 
 	&--pink {
-		background-color: rgba($mainPink, 0.1);
-		border-bottom: 1px solid #f1f1f1;
-		border-top: 1px solid #f1f1f1;;
+		transition: background-color 1s ease;
+		background-color: rgba($mainPink, 0.05);
+		&:hover {
+			background-color: rgba($mainPink, 0.2);
+		}
 	}
 
 	&--blue{

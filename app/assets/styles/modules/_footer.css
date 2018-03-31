@@ -5,7 +5,7 @@
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
-	
+
 		&::before{
 		display: block;
 	    position: absolute;
