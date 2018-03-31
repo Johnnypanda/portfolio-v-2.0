@@ -30,11 +30,6 @@
 
 	&__small-4 {
 
-		@mixin atSmall{
-			max-width: 50%;
-			float: left;
-		}
-
 		@mixin atMedium {
 			max-width: 33.333%;
 			float: left;

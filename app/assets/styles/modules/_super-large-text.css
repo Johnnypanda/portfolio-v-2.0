@@ -20,7 +20,7 @@
 	}
 
 	@mixin atSmall{
-		height: 700px;
+		height: 650px;
 	}
 
 	&__content{

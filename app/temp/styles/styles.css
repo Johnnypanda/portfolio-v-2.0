@@ -749,7 +749,7 @@ img, embed, object, video {
 @media (min-width: 530px){
 
 .super-large-text {
-		height: 700px
+		height: 650px
 
 }
 	}
@@ -927,15 +927,6 @@ img, embed, object, video {
 	}
 	}
 
-@media (min-width: 530px){
-
-.row__small-4 {
-			max-width: 50%;
-			float: left
-
-	}
-	}
-
 @media (min-width: 800px){
 
 .row__small-4 {
@@ -996,47 +987,27 @@ img, embed, object, video {
 }
 	}
 
+.page-section--about {
+		-webkit-transition: background-color .3s ease;
+		transition: background-color .3s ease;
+	}
+
 @media (min-width: 800px){
 
 .page-section--about {
 			margin: 6rem auto;
 			max-width: 1100px
-
 	}
 	}
 
 .page-section--about__main-img{
+			margin-bottom: 20px;
+			line-height: 0;
+			background-color: #EA527D;
+			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+			        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 			position: relative;
-
-
-		}
-
-.page-section--about__main-img::after {
-				display: block;
-			    position: absolute;
-			    bottom: 3px;
-			    left: 0;
-			    z-index: 3;
-			    background: url(/assets/fonts/edge-white.svg) repeat-x 50% 0;
-			    background-size: auto 100%;
-			    width: 100%;
-			    height: 12px;
-			    content: "";
-			}
-
-.page-section--about__main-img::before{
-			display: block;
-		    position: absolute;
-		    top: -1px;
-		    left: 0;
-		    z-index: 3;
-		    background: url(/assets/fonts/edge-white.svg) repeat-x 50% 0;
-		    background-size: auto 100%;
-		    width: 100%;
-		    height: 12px;
-		    content: "";
-		    -webkit-transform: rotate(180deg);
-		            transform: rotate(180deg);
+			border: 2px solid #EA527D;
 		}
 
 .page-section--pink {
@@ -1045,12 +1016,8 @@ img, embed, object, video {
 		background-color: rgba(234,82,125, 0.05);
 	}
 
-.page-section--pink:hover {
-			background-color: rgba(234,82,125, 0.2);
-		}
-
 .page-section--blue{
-		background-color: rgba(35,166,213, 0.1);
+		background-color: rgba(35,166,213, 0.05);
 	}
 
 .page-section--aqua{
@@ -1155,8 +1122,28 @@ img, embed, object, video {
 		transition: color .3s ease;
 	}
 
+.page-section__text-content--small {
+			font-size: 1rem;
+		}
+
+@media (min-width: 530px){
+
+.page-section__text-content--small {
+				font-size: 1rem
+		}
+	}
+
+@media (min-width: 800px){
+
+.page-section__text-content--small {
+				font-size: 1rem
+		}
+	}
+
 .page-section__text-content--highlighted {
-			color: #0c9bce;
+			color: #333;
+			-webkit-transition: color .3s ease;
+			transition: color .3s ease;
 		}
 
 @media (min-width: 530px){
@@ -1173,9 +1160,52 @@ img, embed, object, video {
 	}
 	}
 
+.skills {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}
+
 .skills-item{
 	position: relative;
+	margin: 10px 20px;
+	padding: 10px;
 }
+
+.skills-item:hover {
+		-webkit-transform: scale(1.05);
+		        transform: scale(1.05);
+	    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	    background-color: #fff;
+	}
+
+.skills-item:hover .page-section__text-content--highlighted{
+			color: #0c9bce;;
+		}
+
+.skills-item:hover .skills-item__icon {
+			color: #23A6D5;
+		}
+
+.skills-item:hover .skills-item__title{
+	    	color: #23A6D5;
+	    }
+
+@media (min-width: 530px){
+
+.skills-item:hover .skills-item__title{
+	    		color: #333
+	    }
+	}
 
 @media (min-width: 530px){
 
@@ -1189,7 +1219,6 @@ img, embed, object, video {
 
 		color: #333;
 		display: none;
-		font-size: 3rem;
 	    margin: 0 auto;
 		-webkit-transition: color .3s ease;
 		transition: color .3s ease;
@@ -1201,8 +1230,8 @@ img, embed, object, video {
 			max-width: 45px;
 		    display: block;
 			position: absolute;
-			left: 0;
-			font-size: 5rem
+			left: 10px;
+			font-size: 4rem
 	}
 	}
 
@@ -1233,6 +1262,13 @@ img, embed, object, video {
 
 .skills-item__title {
 			text-align: left;
+			font-size: 1.5rem
+	}
+	}
+
+@media (min-width: 1010px){
+
+.skills-item__title {
 			font-size: 2rem
 	}
 	}
