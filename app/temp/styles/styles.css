@@ -838,7 +838,7 @@ img, embed, object, video {
 .site-footer {
 	position: relative;
 	padding: 1.5rem;
-	background-color: #EA527D;
+	background-color: #23A6D5;
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
@@ -883,6 +883,11 @@ img, embed, object, video {
 	}
 	}
 
+.site-footer__text {
+		padding: 10px 5px 0px 5px;
+		font-size: 1.25rem;
+	}
+
 .site-footer a {
 		 color: #fff;
 		 text-decoration: none;
@@ -892,7 +897,7 @@ img, embed, object, video {
 
 .site-footer a:hover {
 
-		color: #23A6D5;
+		color: #333;
 	}
 
 @media (min-width: 800px){
@@ -1007,7 +1012,8 @@ img, embed, object, video {
 			-webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 			        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 			position: relative;
-			border: 2px solid #EA527D;
+			border: 1px solid #fff;
+			border-radius: 1px;
 		}
 
 .page-section--pink {
@@ -1428,8 +1434,8 @@ img, embed, object, video {
 	}
 
 .btn--small:hover {
-			color: #800080;
-			border-color: #800080;
+			color: #333;
+			border-color: #333;
 		}
 
 .btn--large{
@@ -1441,8 +1447,8 @@ img, embed, object, video {
 	}
 
 .btn--large:hover {
-			color: #EA527D;
-			border-color: #EA527D;
+			color: #23A6D5;
+			border-color: #23A6D5;
 	    	}
 
 @media (min-width: 530px){
@@ -1530,7 +1536,7 @@ img, embed, object, video {
 	}
 
 .primary-nav a:hover {
-			color: #800080;
+			color: #333;
 		}
 
 .primary-nav a::before {

@@ -50,7 +50,7 @@
 		transition: all .3s ease-out;
 
 		&:hover {
-			color: #800080;
+			color: #333;
 		}
 
 		&::before {

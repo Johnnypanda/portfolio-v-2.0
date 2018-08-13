@@ -24,7 +24,8 @@
 			background-color: $mainPink;
 			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 			position: relative;
-			border: 2px solid $mainPink;
+			border: 1px solid #fff;
+			border-radius: 1px;
 		}
 	}
 

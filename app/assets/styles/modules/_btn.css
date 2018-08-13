@@ -9,8 +9,8 @@
 		border-color: #fff;
 
 		&:hover {
-			color: #800080;
-			border-color: #800080;
+			color: #333;
+			border-color: #333;
 		}
 	}
 
@@ -21,8 +21,8 @@
 		z-index: 5;
 
 		&:hover {
-			color: $mainPink;
-			border-color: $mainPink;
+			color: $mainBlue;
+			border-color: $mainBlue;
 	    	}
 
 		@mixin atSmall {
